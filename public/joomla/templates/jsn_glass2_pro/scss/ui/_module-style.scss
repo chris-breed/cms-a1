@@ -1,0 +1,86 @@
+/*!
+ * Sun Framework
+ * Copyright 2018 Joomlashine.
+ * @file _module-style.scss
+ */
+[class*='module-style-']{
+	.module-title{
+		.box-title{
+			padding: 10px 20px;
+			margin: 0;
+			line-height: 27px;
+			border-style: solid;
+			border-width: 0 0 1px 0;
+			i.fa{
+				height: 30px;
+				width: 30px;
+				line-height: 28px;
+				text-align: center;
+			    border-radius: 4px;
+			    border-style: solid;
+			    border-width: 1px;
+			    margin-right: 10px;
+			    color: #d1d6de;
+			}
+		}
+	}
+	.module-body{
+		padding: 20px;
+	}
+}  
+.module-style-1{
+	.module-title{
+		.box-title{
+			border-color: #d1d6de;
+			i.fa{
+				border-color: #d1d6de;
+			} 
+		}
+	}
+}
+.module-style-3{
+	.module-title{
+		.box-title{
+			i.fa{
+				border-color: #d1d6de;
+			} 
+		}
+	}
+}
+.module-style-4{
+	.module-title{
+		.box-title{
+			i.fa{
+				border-color: #fff;
+				color: #fff;
+			} 
+		}
+	}
+}
+.search-module{
+	input{
+		width: 100%;
+	}
+}
+.customer-login-module{
+	.control-group{
+		button{
+			width: 100%;
+		}
+	}
+	.login-greeting{
+		margin-bottom: 10px;
+	}
+	.logout-button{
+		.btn{
+			width: 100%;
+		}
+	}
+}
+
+.show_breadcrumb{
+	.title_breadcrumb{
+		padding: 0 15px;
+		margin-bottom: 10px;
+	}
+}

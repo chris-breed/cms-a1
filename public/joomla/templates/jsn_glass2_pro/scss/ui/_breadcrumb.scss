@@ -1,0 +1,38 @@
+.breadcrumb {
+	padding: 0 15px;
+    background-color: transparent;
+	margin: 0;
+	line-height: 10px;
+    li a:hover{
+    	color: #8899AC;
+    }
+    span.divider{
+    	display: none;
+    }
+    > li + li:before {
+        content: "\f0da";
+        font-family: FontAwesome;
+        padding: 0 10px;
+        color: #333; 
+    }
+    > .active{
+        color: #555;
+    }
+}
+.dark-bg {
+	li + li:before{
+    	content: '\f105';
+    	font-family: 'FontAwesome';
+    	color: #fff;
+    }
+	.breadcrumb {
+		padding: 0;
+		li > span[itemprop="name"],
+		> .active {
+			color: #fff;
+		}
+	}
+}
+#sunfw_section_breadcrumb h1{
+    line-height: 42px;
+}

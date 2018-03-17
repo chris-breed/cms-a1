@@ -1,0 +1,23 @@
+/* ============================ */
+$main-color: false !default;
+@if($main-color != false) {
+	.block-item:hover .block-quote,
+	body span.event-date span.month {
+		background: $main-color;
+	}
+	.hover-main-color span:hover,
+	.hover-main-color a:hover {
+		color: $main-color !important;
+	}
+	.page-header h2 a:hover {
+		color: $main-color;
+	}
+}
+/* ============================ Sub Color ============================ */
+$sub-color: false !default;
+@if($sub-color != false){
+
+	
+}
+
+

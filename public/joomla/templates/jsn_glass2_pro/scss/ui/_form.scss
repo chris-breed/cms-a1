@@ -1,0 +1,91 @@
+label{
+	font-weight: normal;
+	span.star{
+		color: #F95050;
+	}
+}
+select[multiple], select[size],
+select, textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"]{
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 14px;
+	color: #394A5C;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #D1D6DE;
+    transition: border-color ease-in-out .15s;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    &:focus{
+    	border-color: #00A0FF;
+    }
+    &[aria-invalid="true"]{
+    	border-color: #F95050;
+    }
+}
+textarea {
+	height: auto;
+}
+button{
+    outline: 0;
+}
+.btn:focus, 
+.btn.focus, 
+.btn:active:focus, 
+.btn:active.focus, 
+.btn.active:focus, 
+.btn.active.focus {
+    outline: 0;
+    outline-offset: -2px;
+}
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly]{
+	cursor: not-allowed;
+    background-color: #F0F2F5;
+}
+
+.jsn-master .jsn-bootstrap input[type="text"], 
+.jsn-master .jsn-bootstrap input[type="password"], 
+.jsn-master .jsn-bootstrap input[type="number"], 
+.jsn-master .jsn-bootstrap input[type="search"], 
+.jsn-master .jsn-bootstrap input[type="email"], 
+.jsn-master .jsn-bootstrap input[type="url"]{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.chzn-container-single{
+    .chzn-drop{
+        margin-top: -3px;
+        border: 1px solid #d1d6de;
+        border-top: 0;
+        .chzn-search{
+            input[type="text"]{
+                border: 1px solid #D1D6DE;
+                min-width: auto;
+                max-width: 100%;
+            }
+        }
+    }  
+} 
+.btn-primary:active, 
+.btn-primary.active, 
+.open > .btn-primary.dropdown-toggle{
+    box-shadow: none;
+}

@@ -1,0 +1,21 @@
+/* ============================ */
+$main-color: false !default;
+@if($main-color != false) {
+	.blog-featured{
+		.category-name{
+			span{
+				color: $main-color;
+			}
+		}
+	}
+	.blog{
+		.category-name{
+			color: $main-color;
+		}
+	}
+}
+/* ============================ Sub Color ============================ */
+$sub-color: false !default;
+@if($sub-color != false){  
+	
+}

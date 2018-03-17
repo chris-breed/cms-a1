@@ -1,0 +1,80 @@
+
+// form contact
+
+.form-contact {
+  .control-group {
+    margin-bottom: 20px;
+    zoom: 1;
+    &:before {
+      display: table;
+      line-height: 0;
+      content: "";
+    }
+    &:after {
+      display: table;
+      line-height: 0;
+      content: "";
+      clear: both;
+    }
+  }
+  .control-label {
+    @include rtl-float-left();
+    width: 160px;
+    padding-top: 5px;
+    @include rtl-text-align-right();
+  }
+  .controls {
+    display: inline-block;
+    @include rtl-padding-left(20px);
+    width: calc(100% - 180px);
+
+    input, textarea {
+    	display: block;
+    	width: 100%;
+    }
+
+  }
+  .help-block {
+    margin-bottom: 0;
+  }
+  input + .help-block, select + .help-block, textarea + .help-block, .uneditable-input + .help-block, .input-prepend + .help-block, .input-append + .help-block {
+    margin-top: 10px;
+  }
+  .form-actions {
+    @include rtl-padding-left(180px);
+  }
+}
+.page-contact-us{
+  .contact-filed{
+    margin: 10px 0 !important;
+    padding:0 !important;
+    [class*='jsn-input-']{
+      width: 100% !important;
+    }
+    label.control-label{
+      display: none;
+    }
+  }
+  .contact-textarea{
+    textarea{
+      padding: 10px !important;
+    }
+  }
+  .form-actions{
+    margin: 15px 0 !important;
+    .btn-toolbar{
+      &.pull-right{
+        float: none !important;
+        display: flex;
+        justify-content: center;
+        button.btn{
+          margin-left: 0;
+          width: 150px !important; 
+        }
+      }
+    } 
+  }
+}
+.jsn-bootstrap .jsn-form-content .control-group{
+  float: none;
+}

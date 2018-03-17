@@ -1,0 +1,66 @@
+/*!
+ * Sun Framework
+ * Copyright 2016 Joomlashine.
+ * @file _module-style.scss
+ */
+.module-title i.fa:before {
+  @include rtl-padding-right(8px);
+  @include rtl-padding-left(0);
+}
+ [class*='lightbox-'],[class*='richbox-']{
+ 	.module-body{
+ 		p:last-child{
+ 			margin-bottom: 0;
+ 		}
+ 	}
+ }
+
+[class*='lightbox-'], [class*='richbox-'], [class*='module-style-']{
+ 	.module-title{
+ 		padding: 11.5px 20px;
+ 		border-bottom: 1px solid #2a2d32;
+ 		.box-title {
+			margin: 0;
+			line-height: 1.3;
+ 		}	
+ 	} 
+	.module-body{
+		padding: 20px;
+		line-height: 1.5;
+		> ul {
+			padding-top: 0;
+		}	
+	} 
+	ol > li, ul > li {
+		line-height: 21px;
+		padding: 0;
+		a {
+			padding: 8px 0 7px;
+			display: block;
+		}
+	}
+}
+.richbox-2{
+	.module-title{
+		background-color: #232428; 
+		border:0;
+		border-bottom: 1px solid #2a2d32;
+	}
+}
+.module-style.module-style-2{
+	padding: 20px;
+	.module-title{
+		padding: 0;
+		border: 0;
+		.box-title{	
+			margin-bottom: 20px;
+		    line-height: 1;
+		    padding-bottom: 20px;
+		    border-bottom: 1px solid #232428;
+		    margin-top: 0;
+		}	
+	}
+	.module-body{
+		padding: 0;
+	} 
+} 

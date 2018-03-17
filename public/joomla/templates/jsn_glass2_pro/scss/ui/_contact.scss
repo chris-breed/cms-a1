@@ -1,0 +1,34 @@
+.contact-category{
+	.page-header{
+		h2{
+			font-size: 28px;
+		}
+	}
+	.category-desc{
+		p{
+			margin-bottom: 25px;
+		}
+	}
+	#adminForm{
+		.filters{
+			.btn-group{
+				input[type="text"]{
+					min-width: 250px;
+					border-radius: 4px;
+				}
+				select{
+					height: 25px;
+					min-width: 60px;
+				}
+			}
+		}
+		.category{
+			.list-title{
+				font-size: 18px;
+				a{
+					color: #555;
+				}
+			}
+		}
+	}
+}
