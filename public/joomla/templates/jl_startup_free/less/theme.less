@@ -1,0 +1,193 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import "uikit/uikit.less";
+
+/* ========================================================================
+   Warp theme
+ ========================================================================== */
+
+// Theme Variables
+// ==========================================================================
+
+@theme-body-background:                                 #f4f4f4;
+@theme-container-small:                                 960px;
+@theme-headerbar-width:                                 @utility-container-max-width;
+@theme-header-bg:                                       #fff;
+@theme-footer-background:                               #272828;
+
+/* Layout
+ ========================================================================== */
+
+/*
+ * Force vertical scrollbar
+ */
+
+html { overflow-y: scroll; }
+
+//
+// Page
+//
+
+.tm-home { background: @theme-body-background; }
+
+//
+// Headerbar
+//
+
+.position-header { background: @theme-header-bg; }
+
+.position-headerbar {
+    position: relative;
+    min-height: 20px;
+    color: @global-color;
+}
+
+.tm-headerbar { padding: 15px; }
+
+// Navbar
+.tm-navbar {
+    z-index: @global-z-index;
+    height: @navbar-nav-height;
+}
+
+.tm-navbar-container {
+    max-width: @theme-headerbar-width;
+    margin: 0 auto;
+}
+
+.uk-navbar-content { overflow: inherit; }
+
+//
+// Toolbar
+//
+
+.position-toolbar { padding: 15px 30px; }
+.position-toolbar > .uk-container { padding: 0; }
+
+.tm-fullwidth > .uk-container {
+  max-width: 100%;
+  padding: 0;
+}
+[class*='row-space'] { margin: @global-margin; }
+
+[class*='row-space'].tm-block-fullwidth {
+    margin-left: @global-margin;
+    margin-right: @global-margin;
+}
+
+// Tablet and bigger
+@media (min-width: @breakpoint-medium) {
+
+    .row-space-large {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
+    .tm-large {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+}
+
+/* Large screen and bigger */
+@media (min-width: (@utility-container-large-max-width + (@global-margin * 2))) {
+    [class*='row-space'] {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+.tm-block-padding-no { padding: 0; }
+.tm-block-padding-no > * { padding: 0; }
+
+.tm-content-width-small {
+    max-width: @theme-container-small;
+    padding: 0 @global-margin;
+}
+
+//
+// Main
+//
+
+.tm-main-top { margin-bottom: @global-margin; }
+.tm-main-bottom { margin-top: @global-margin; }
+.tm-main-top + .tm-main-bottom { margin-top: 0; }
+
+//
+// Footer
+//
+
+.position-footer {
+    background: @theme-footer-background;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.position-footer .uk-container { position: relative; }
+
+//
+// To-top scroller
+//
+
+.tm-totop-scroller {
+
+    display: block;
+    height: @global-height;
+    right: @global-grid-gutter;
+    color: @global-heading-color !important;
+    z-index: 1;
+    cursor: pointer;
+
+    // Tablet and desktop
+    @media (min-width: @breakpoint-medium) { position: absolute; }
+
+    // Large screen
+    @media (min-width: @breakpoint-xlarge) { right: @global-grid-gutter-large; }
+
+    &:hover { }
+
+    &:after {
+        content: "\f106";
+        font-family:FontAwesome;
+        font-size: 30px;
+    }
+
+}
+
+/* Error
+ ========================================================================== */
+
+ .tm-featured-image { display: inherit; }
+
+ .tm-article-meta span:not(:first-child):before {
+     content: '\2013';
+     display: inline-block;
+     margin: 0 10px;
+     color: @global-color;
+ }
+
+
+/* Error
+ ========================================================================== */
+
+.tm-error-icon { font-size: 250px; }
+.tm-error-headline { font-size: 100px; }
+
+
+/* Offline
+ ========================================================================== */
+
+.tm-offline { width: 300px; }
+
+
+//
+// Spacing
+//
+
+// Tablet and bigger
+@media (min-width: @breakpoint-medium) {
+    .tm-margin-large-top { margin-top: 100px !important; }
+    .tm-margin-large-bottom { margin-bottom: 100px !important; }
+}
