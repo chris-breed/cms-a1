@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="joomlasales">
+	<name>Joomlasales Html Editor</name>
+    <creationDate>2015-09-22</creationDate>
+    <copyright>Copyright (C) 2015. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later;</license>
+    <author>Mike Hill - JoomlaSales.com</author>
+    <authorEmail>info@joomlasales.com</authorEmail>
+    <authorUrl>http://joomlasales.com</authorUrl>
+    <version>1.1</version>
+	<description>This plugin powers the HTML editor experience in all Joomlasales.com extensions.</description>
+	<files>
+		<filename plugin="htmleditor">htmleditor.php</filename>
+		<!--<filename>index.html</filename>-->
+		<folder>libraries</folder>
+	</files>
+</extension>

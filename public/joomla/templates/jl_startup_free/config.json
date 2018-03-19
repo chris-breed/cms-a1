@@ -105,8 +105,8 @@
 		}
 	},
 	"widgets": {
-		"91": {
-			"class": "headerslider",
+		"93": {
+			"class": "",
 			"panel": "",
 			"title_size": "uk-panel-title",
 			"icon": "",

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>COM_LPS</name>
+    <creationDate>2015-09-29</creationDate>
+    <copyright>Copyright (C) 2015. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later;</license>
+    <author>Mike Hill - JoomlaSales.com</author>
+    <authorEmail>info@joomlasales.com</authorEmail>
+    <authorUrl>http://joomlasales.com</authorUrl>
+    <version>2.7</version>
+    <description><![CDATA[LPs is a component designed to help you create and manage your landing pages, templates, contact forms, submissions, leads and much more!<br /><br />&copy;&nbsp;<a href="http://www.joomlasales.com">Joomlasales.com</a> - Your Joomla Marketing Suite.]]></description>
+    <installfile>install.lps.php</installfile>
+    <uninstallfile>uninstall.lps.php</uninstallfile> 
+
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>lps.php</filename>
+        <filename>controller.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>tables</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>language</folder>
+        <folder>assets</folder>
+    </files>
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB.com_lps.ini</language>
+    </languages>
+    <administration>
+        <menu>COM_LPS</menu>
+        <submenu>
+            <menu link="option=com_lps&amp;view=landingpages" view="landingpages" alt="landingpages">
+                COM_LPS_VIEW_TITLE_LANDING_PAGES
+            </menu>
+            <menu link="option=com_lps&amp;view=templates" view="templates" alt="templates">
+                COM_LPS_VIEW_TITLE_TEMPLATES
+            </menu>
+            <menu link="option=com_lps&amp;view=forms" view="forms" alt="forms">
+                COM_LPS_VIEW_TITLE_FORMS
+            </menu>
+            <menu link="option=com_lps&amp;view=fields" view="fields" alt="fields">
+                COM_LPS_VIEW_TITLE_FIELDS
+            </menu>            
+            <menu link="option=com_lps&amp;view=submissions" view="submissions" alt="submissions">
+                COM_LPS_VIEW_TITLE_SUBMISSIONS
+            </menu>
+            <menu link="option=com_lps&amp;view=leads" view="leads" alt="leads">
+                COM_LPS_VIEW_TITLE_LEADS
+            </menu>            
+        </submenu>
+
+
+        <files folder="admin">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>lps.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <folder>language</folder>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB.com_lps.ini</language>
+            <language tag="en-GB">language/en-GB.com_lps.sys.ini</language>
+        </languages>
+    </administration>
+</extension>
+
