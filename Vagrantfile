@@ -17,5 +17,15 @@ Vagrant.configure("2") do |config|
 
     # Optional NFS. Make sure to remove other synced_folder line too
     #config.vm.synced_folder ".", "/var/www", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
+end
 
+config.push.define "ftp" do |push|
+    
+    # Login Credentials
+    push.host = "77.104.150.66/chri3522"
+    push.username = "christopher.breed@my.jcu.edu.au"
+    push.password = "itEXS7AwemVv"
+    push.secure = true
+    push.destination = "/home/chri3522/public_html"
+    push.dir = "public"
 end
