@@ -1,0 +1,74 @@
+DEBUG   |180322 00:08:45|*** Batching successive steps (nesting level 1)
+DEBUG   |180322 00:08:45|====== Starting Step number 1 ======
+DEBUG   |180322 00:08:45|Kettenrad :: Switching domains
+DEBUG   |180322 00:08:45|Kettenrad :: BREAKING STEP BEFORE SWITCHING DOMAIN
+DEBUG   |180322 00:08:45|Switching to domain init, class Init
+DEBUG   |180322 00:08:45|Akeeba\Engine\Core\Domain\Init :: New instance
+DEBUG   |180322 00:08:45|Kettenrad :: Ticking the domain object
+DEBUG   |180322 00:08:45|Kettenrad :: Domain object returned; propagating
+DEBUG   |180322 00:08:45|Kettenrad :: Break flag status: YES
+DEBUG   |180322 00:08:45|----- Finished operation 1 ------
+DEBUG   |180322 00:08:45|Successful Smart algorithm on Akeeba\Engine\Core\Domain\Init
+DEBUG   |180322 00:08:45|====== Finished Step number 1 ======
+DEBUG   |180322 00:08:45|Kettenrad :: Setting the break flag between domains
+DEBUG   |180322 00:08:45|*** Engine steps batching: Break flag detected.
+DEBUG   |180322 00:08:45|*** Batching of engine steps finished. I will now return control to the caller.
+DEBUG   |180322 00:08:45|====== Starting Step number 2 ======
+DEBUG   |180322 00:08:45|Kettenrad :: Ticking the domain object
+INFO    |180322 00:08:45|--------------------------------------------------------------------------------
+INFO    |180322 00:08:45|Akeeba Backup 6.0.1 (2018-02-26)
+INFO    |180322 00:08:45|Got backup?
+INFO    |180322 00:08:45|--------------------------------------------------------------------------------
+INFO    |180322 00:08:45|--- System Information ---
+INFO    |180322 00:08:45|PHP Version        :7.0.18-0ubuntu0.16.04.1
+INFO    |180322 00:08:45|PHP OS             :Linux
+INFO    |180322 00:08:45|PHP SAPI           :apache2handler
+INFO    |180322 00:08:45|OS Version         :Linux
+INFO    |180322 00:08:45|DB Version         :5.7.18-0ubuntu0.16.04.1
+INFO    |180322 00:08:45|Web Server         :Apache/2.4.18 (Ubuntu)
+INFO    |180322 00:08:45|Joomla! version    :3.8.6
+INFO    |180322 00:08:45|User agent         :Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+INFO    |180322 00:08:45|Safe mode          :
+INFO    |180322 00:08:45|Display errors     :
+INFO    |180322 00:08:45|Error reporting    :E_ALL
+INFO    |180322 00:08:45|Error display      :off
+INFO    |180322 00:08:45|Disabled functions :pcntl_alarm,pcntl_fork,pcntl_waitpid,pcntl_wait,pcntl_wifexited,pcntl_wifstopped,pcntl_wifsignaled,pcntl_wifcontinued,pcntl_wexitstatus,pcntl_wtermsig,pcntl_wstopsig,pcntl_signal,pcntl_signal_dispatch,pcntl_get_last_error,pcntl_strerror,pcntl_sigprocmask,pcntl_sigwaitinfo,pcntl_sigtimedwait,pcntl_exec,pcntl_getpriority,pcntl_setpriority,
+INFO    |180322 00:08:45|open_basedir restr.:
+INFO    |180322 00:08:45|Max. exec. time    :0
+INFO    |180322 00:08:45|Memory limit       :128M
+INFO    |180322 00:08:45|Current mem. usage :11198888
+INFO    |180322 00:08:45|GZIP Compression   : available (good)
+INFO    |180322 00:08:45|JPATH_BASE         :<root>/administrator
+INFO    |180322 00:08:45|JPATH_SITE         :<root>
+INFO    |180322 00:08:45|JPATH_ROOT         :<root>
+INFO    |180322 00:08:45|JPATH_CACHE        :<root>/administrator/cache
+INFO    |180322 00:08:45|Computed root      :<root>
+INFO    |180322 00:08:45|Min/Max/Bias       :2000/14/75
+INFO    |180322 00:08:45|Output directory   :<root>/administrator/components/com_akeeba/backup
+INFO    |180322 00:08:45|Part size (bytes)  :0
+INFO    |180322 00:08:45|--------------------------------------------------------------------------------
+INFO    |180322 00:08:45|Loaded profile #1
+DEBUG   |180322 00:08:45|Archive template name: site-[HOST]-[DATE]-[TIME_TZ]
+DEBUG   |180322 00:08:45|Expanded template name: site-192.168.33.10-20180322-000845utc
+DEBUG   |180322 00:08:45|Backup type is now set to 'full'
+DEBUG   |180322 00:08:45|Expanded archive file name: <root>/administrator/components/com_akeeba/backup/site-192.168.33.10-20180322-000845utc.jpa
+DEBUG   |180322 00:08:45|Initializing archiver engine
+DEBUG   |180322 00:08:45|Akeeba\Engine\Archiver\Jpa :: new instance - archive <root>/administrator/components/com_akeeba/backup/site-192.168.33.10-20180322-000845utc.jpa
+DEBUG   |180322 00:08:45|Akeeba\Engine\Archiver\BaseArchiver :: Killing old archive
+DEBUG   |180322 00:08:45|Kettenrad :: Domain object returned; propagating
+DEBUG   |180322 00:08:45|Kettenrad :: Break flag status: no
+DEBUG   |180322 00:08:45|----- Finished operation 1 ------
+DEBUG   |180322 00:08:45|Kettenrad :: Ticking the domain object
+DEBUG   |180322 00:08:45|Kettenrad :: Domain object returned; propagating
+DEBUG   |180322 00:08:45|Kettenrad :: Break flag status: no
+DEBUG   |180322 00:08:45|----- Finished operation 2 ------
+DEBUG   |180322 00:08:45|Successful Smart algorithm on Akeeba\Engine\Core\Domain\Init
+DEBUG   |180322 00:08:45|Kettenrad :: Domain 'init' has finished.
+DEBUG   |180322 00:08:45|====== Finished Step number 2 ======
+DEBUG   |180322 00:08:45|Kettenrad :: Setting the break flag between domains
+DEBUG   |180322 00:08:45|*** Engine steps batching: Break flag detected.
+DEBUG   |180322 00:08:45|*** Batching of engine steps finished. I will now return control to the caller.
+DEBUG   |180322 00:08:45|Sleeping for 1932.3110580444 msec, using usleep()
+DEBUG   |180322 00:08:47|Saving Kettenrad instance backend
+DEBUG   |180322 00:09:49|Kettenrad :: Attempting to load from database (backend.id1) [backend.id1]
+DEBUG   |180322 00:09:49| -- Loaded stored Akeeba Factory (backend.id1) [backend.id1]
