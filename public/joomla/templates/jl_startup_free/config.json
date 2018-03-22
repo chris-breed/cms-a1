@@ -152,6 +152,38 @@
 				"medium": "1",
 				"small": "1"
 			}
+		},
+		"98": {
+			"class": "",
+			"panel": "",
+			"title_size": "uk-panel-title",
+			"icon": "",
+			"badge": {
+				"type": "uk-panel-badge uk-badge",
+				"text": ""
+			},
+			"badge_align": "",
+			"display": {
+				"large": "1",
+				"medium": "1",
+				"small": "1"
+			}
+		},
+		"99": {
+			"class": "",
+			"panel": "",
+			"title_size": "uk-panel-title",
+			"icon": "",
+			"badge": {
+				"type": "uk-panel-badge uk-badge",
+				"text": ""
+			},
+			"badge_align": "",
+			"display": {
+				"large": "1",
+				"medium": "1",
+				"small": "1"
+			}
 		}
 	},
 	"menus": {
