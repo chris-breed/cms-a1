@@ -1,3 +1,14 @@
-li a {
-    padding-left: 10px;
+body {
+    font-family: Arial, sans-serif;
+    margin-left: 3em;
+}
+
+h1,
+h2 {
+    margin-left: -1em;
+}
+
+h2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
